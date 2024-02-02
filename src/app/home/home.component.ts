@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router,  } from '@angular/router';
 import { EmployeeService } from '../service/employee.service';
 import { MatDialog } from '@angular/material/dialog';
-import { SignUpComponent } from '../sign-up/sign-up.component';
+import { SignUpComponent } from '../../employee/sign-up/sign-up.component';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +29,7 @@ OnLogin() {
   {localStorage.setItem("userId",a)
     console.log(a);
   if(a!=-1){
-    this.router.navigate(['/employee'])
+    this.router.navigate(['/employee/profile'])
   }
   
   

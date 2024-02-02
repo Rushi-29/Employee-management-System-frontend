@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
-import { LeaveService } from './leave.service';
+import { LeaveService } from './service/leave.service';
 import { EmployeeService } from './employee.service';
 
 @Injectable({
